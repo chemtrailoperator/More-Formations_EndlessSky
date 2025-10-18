@@ -16,6 +16,10 @@ formation "Line (Leading)"
 	position 0 -200
 		repeat 0 -200
 
+formation "Single Point"
+	position 0 200
+		repeat
+
 #Formation style that creates groups of ships
 formation "Navy Box"
 	flippable y
