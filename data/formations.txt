@@ -1,0 +1,355 @@
+# Copyright (c) 2025 by Living_Adblocker
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+#Formation style that creates groups of ships
+formation "Navy Box"
+	flippable y
+	position 0 174
+	#Line that creates the sides of each box going to the right
+	line
+		start 150 87
+		end -150 87
+		positions 2
+		repeat
+			start 750 435
+			end 750 435
+	#Line that creates the front and back, going to the right
+	line
+		start 750 435
+		end 750 609
+		positions 2
+		repeat
+			start 750 435
+			end 750 435
+	#Line that creates the sides of each box to the left, with offset
+	line
+		start -600 522
+		end -900 522
+		positions 2
+		repeat
+			start -750 435
+			end -750 435
+	#Line that creates the front and back, going to the left. Both are offset to avoid flagship
+	line
+		start -750 435
+		end -750 609
+		positions 2
+		repeat
+			start -750 435
+			end -750 435
+	#Line that holds front and back for the rear line, going to the right
+	line
+		start 0 870
+		end 0 1044
+		positions 2
+		repeat
+			start 750 435
+			end 750 435
+	
+	#Left and right for rear line, to the right
+	line
+		start -150 957
+		end 150 957
+		positions 2
+		repeat
+			start 750 435
+			end 750 435
+	#Line that holds front and back for the rear line, going to the left and offset
+	line
+		start -750 1305
+		end -750 1479
+		positions 2
+		repeat
+			start -750 435
+			end -750 435
+	#left and right for rear line, to the left with offset
+	line
+		start -600 1392
+		end -900 1392
+		positions 2
+		repeat
+			start -750 435
+			end -750 435
+
+formation "Vortex"
+	rotateable 90
+	arc
+		start 0 250
+		angle 1
+		skip first
+		positions 2
+		repeat
+			start 0 200
+			angle 20
+	arc
+		start 0 -250
+		angle 1
+		skip first
+		positions 2
+		repeat
+			start 0 -200
+			angle 20
+	arc
+		start 250 0
+		angle 1
+		skip first
+		positions 2
+		repeat
+			start 200 0
+			angle 20
+	arc
+		start -250 0
+		angle 1
+		skip first
+		positions 2
+		repeat
+			start -200 0
+
+			angle 20
+
+#Creates six stable lines radiating out from the player.
+formation "Asterisk stable"
+	rotatable 0
+	arc
+		start 150 0
+		angle 360
+		skip last
+		positions 7
+		repeat
+			start 150 0
+
+#Makes very large concentric rings around the player. Yes, its supposed to be this big.
+formation "Rings Huge"
+	rotatable 1
+	arc
+		start 1200 0
+		angle 360
+		skip last
+		positions 13
+		repeat
+			start 1200 0
+			positions 12
+
+formation "Rings Medium"
+	rotatable 1
+	arc
+		start 600 0
+		angle 360
+		skip last
+		positions 12
+		repeat
+			start 600 0
+			positions 10
+
+formation "Rings Small"
+	rotatable 1
+	arc
+		start 200 0
+		angle 360
+		skip last
+		positions 11
+		repeat
+			start 200 0
+			positions 9
+
+formation "Warp"
+	rotatable 1
+	arc
+		start 200 0
+		angle 360
+		skip last
+		positions 3
+		repeat
+			start 200 0
+			positions 2
+
+formation "Magnetic"
+	arc
+		start 100 0
+		angle 360
+		skip last
+		positions 2
+		repeat
+			start 100 0
+			positions 1
+
+#Makes a single dense ring around the player.
+formation "Wall"
+	rotatable 1
+	arc
+		start 800 0
+		angle 360
+		skip last
+		positions 36
+		repeat
+			start -2 23
+
+#Makes shape of electron shells around player. Takes up to 118 ships.
+formation "Radioactive"
+	flippable xy
+	arc
+		start 400 0
+		angle 360
+		skip last
+		positions 3
+	arc
+		start 800 0
+		angle 360
+		skip last
+		positions 9
+	arc
+		start 1200 0
+		angle 360
+		skip last
+		positions 19
+	arc
+		start 1600 0
+		angle 360
+		skip last
+		positions 33
+	arc
+		start 2000 0
+		angle 360
+		skip last
+		positions 33
+	arc
+		start 2400 0
+		angle 360
+		skip last
+		positions 19
+	arc
+		start 2800 0
+		angle 360
+		skip last
+		positions 9
+
+#Makes scientifically accurate electron shells. Also takes up to 118 ships.
+formation "Orbitals"
+	rotatable 1
+#1s
+	arc 
+		start 300 0
+		angle 360
+		skip last
+		positions 3
+#2s
+	arc 
+		start 700 0
+		angle 360
+		skip last
+		positions 3
+#2p
+	arc
+		start 750 0
+		angle 360
+		skip last
+		positions 7
+#3s
+	arc 
+		start 1100 0
+		angle 360
+		skip last
+		positions 3
+#3p
+	arc
+		start 1150 0
+		angle 360
+		skip last
+		positions 7
+#4s
+	arc 
+		start 1500 0
+		angle 360
+		skip last
+		positions 3
+#3d
+	arc
+		start 1200 0
+		angle 360
+		skip last
+		positions 11
+#4p
+	arc
+		start 1550 0
+		angle 360
+		skip last
+		positions 7
+#5s
+	arc 
+		start 1900 0
+		angle 360
+		skip last
+		positions 3
+#4d
+	arc
+		start 1600 0
+		angle 360
+		skip last
+		positions 11
+#5p
+	arc
+		start 1950 0
+		angle 360
+		skip last
+		positions 7
+#6s
+	arc 
+		start 2300 0
+		angle 360
+		skip last
+		positions 3
+#4f
+	arc
+		start 1650 0
+		angle 360
+		skip last
+		positions 15
+#5d
+	arc
+		start 2000 0
+		angle 360
+		skip last
+		positions 11
+#6p
+	arc
+		start 2350 0
+		angle 360
+		skip last
+		positions 7
+#7s
+	arc 
+		start 2700 0
+		angle 360
+		skip last
+		positions 3
+#5f
+	arc
+		start 2050 0
+		angle 360
+		skip last
+		positions 15
+#6d
+	arc
+		start 2400 0
+		angle 360
+		skip last
+		positions 11
+#7p
+	arc
+		start 2750 0
+		angle 360
+		skip last
+		positions 7
+
+
+
