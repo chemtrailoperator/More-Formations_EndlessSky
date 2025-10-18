@@ -184,12 +184,12 @@ formation "Warp"
 
 formation "Magnetic"
 	arc
-		start 0 -100
+		start 0 100
 		angle 360
 		skip last
 		positions 2
 		repeat
-			start 0 -100
+			start 0 100
 			positions 1
 
 #Makes a single dense ring around the player.
