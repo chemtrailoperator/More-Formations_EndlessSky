@@ -1,0 +1,7 @@
+name `More-Formations`
+about `This plugin adds more formations for spaceflight ot the vanilla list.`
+about `Use shift+G to scroll through the list or appropriate key if you rebound the 'Fleet: Gather around me' key.`
+version 1
+authors
+  "Living_Adblocker"
+  ChemtrailOperator
