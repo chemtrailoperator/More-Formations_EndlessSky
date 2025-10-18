@@ -11,14 +11,14 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
-formation "Line (Leading)"
+formation "Line (leading)"
 	flippable y
 	position 0 -200
 		repeat 0 -200
 
 formation "Single Point"
 	position 0 200
-		repeat
+		repeat 0 0
 
 #Formation style that creates groups of ships
 formation "Navy Box"
