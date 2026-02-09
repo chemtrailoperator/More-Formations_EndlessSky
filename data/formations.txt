@@ -24,7 +24,7 @@ formation "Single Point"
 formation "Navy Box"
 	flippable y
 	position 0 174
-	#Line that creates the sides of each box going to the right
+#Line that creates the sides of each box going to the right
 	line
 		start 150 87
 		end -150 87
@@ -32,7 +32,7 @@ formation "Navy Box"
 		repeat
 			start 750 435
 			end 750 435
-	#Line that creates the front and back, going to the right
+#Line that creates the front and back, going to the right
 	line
 		start 750 435
 		end 750 609
@@ -40,7 +40,7 @@ formation "Navy Box"
 		repeat
 			start 750 435
 			end 750 435
-	#Line that creates the sides of each box to the left, with offset
+#Line that creates the sides of each box to the left, with offset
 	line
 		start -600 522
 		end -900 522
@@ -48,7 +48,7 @@ formation "Navy Box"
 		repeat
 			start -750 435
 			end -750 435
-	#Line that creates the front and back, going to the left. Both are offset to avoid flagship
+#Line that creates the front and back, going to the left. Both are offset to avoid flagship
 	line
 		start -750 435
 		end -750 609
@@ -56,7 +56,7 @@ formation "Navy Box"
 		repeat
 			start -750 435
 			end -750 435
-	#Line that holds front and back for the rear line, going to the right
+#Line that holds front and back for the rear line, going to the right
 	line
 		start 0 870
 		end 0 1044
@@ -65,7 +65,7 @@ formation "Navy Box"
 			start 750 435
 			end 750 435
 	
-	#Left and right for rear line, to the right
+#Left and right for rear line, to the right
 	line
 		start -150 957
 		end 150 957
@@ -73,7 +73,7 @@ formation "Navy Box"
 		repeat
 			start 750 435
 			end 750 435
-	#Line that holds front and back for the rear line, going to the left and offset
+#Line that holds front and back for the rear line, going to the left and offset
 	line
 		start -750 1305
 		end -750 1479
@@ -81,7 +81,7 @@ formation "Navy Box"
 		repeat
 			start -750 435
 			end -750 435
-	#left and right for rear line, to the left with offset
+#left and right for rear line, to the left with offset
 	line
 		start -600 1392
 		end -900 1392
@@ -360,5 +360,173 @@ formation "Orbitals"
 		skip last
 		positions 7
 
+# Makes echelons of ships behind and to the sides of the player.
+formation "Shards"
+#---------------------------------------- First echelon behind player.
+	position -50 150
+		repeat 0 700
+	
+	position 50 150
+		repeat 0 700
+	
+	position -100 200
+		repeat 0 700
+	
+	position 100 200
+		repeat 0 700
+	
+	position -150 250
+		repeat 0 700
+	
+	position 150 250
+		repeat 0 700
+	
+	position -200 300
+		repeat 0 700
+	
+	position 200 300
+		repeat 0 700
+	
+#------------------------------------------- Second echelon behind player.
+	position 0 200
+		repeat 0 700
 
+	position -50 250
+		repeat 0 700
+	
+	position 50 250
+		repeat 0 700
+	
+	position -100 300
+		repeat 0 700
+	
+	position 100 300
+		repeat 0 700
+	
+	position -150 350
+		repeat 0 700
+	
+	position 150 350
+		repeat 0 700
+	
+	position -200 400
+		repeat 0 700
+	
+	position 200 400
+		repeat 0 700
+
+#---------------------------------------- First echelon of left side of player.
+	position -600 400
+		repeat 0 700
+
+	position -650 450
+		repeat 0 700
+	
+	position -550 450
+		repeat 0 700
+	
+	position -700 500
+		repeat 0 700
+	
+	position -500 500
+		repeat 0 700
+	
+	position -750 550
+		repeat 0 700
+	
+	position -450 550
+		repeat 0 700
+	
+	position -800 600
+		repeat 0 700
+	
+	position -400 600
+		repeat 0 700
+		
+#---------------------------------------- Second echelon of left side of player.
+	position -600 500
+		repeat 0 700
+
+	position -650 550
+		repeat 0 700
+	
+	position -550 550
+		repeat 0 700
+	
+	position -700 600
+		repeat 0 700
+	
+	position -500 600
+		repeat 0 700
+	
+	position -750 650
+		repeat 0 700
+	
+	position -450 650
+		repeat 0 700
+	
+	position -800 700
+		repeat 0 700
+	
+	position -400 700
+		repeat 0 700
+		
+#---------------------------------------- First echelon of right side of player.
+	position 600 400
+		repeat 0 700
+
+	position 650 450
+		repeat 0 700
+	
+	position 550 450
+		repeat 0 700
+	
+	position 700 500
+		repeat 0 700
+	
+	position 500 500
+		repeat 0 700
+	
+	position 750 550
+		repeat 0 700
+	
+	position 450 550
+		repeat 0 700
+	
+	position 800 600
+		repeat 0 700
+	
+	position 400 600
+		repeat 0 700
+
+#---------------------------------------- Second echelon of right side of player.
+	position 600 500
+		repeat 0 700
+
+	position 650 550
+		repeat 0 700
+	
+	position 550 550
+		repeat 0 700
+	
+	position 700 600
+		repeat 0 700
+	
+	position 500 600
+		repeat 0 700
+	
+	position 750 650
+		repeat 0 700
+	
+	position 450 650
+		repeat 0 700
+	
+	position 800 700
+		repeat 0 700
+	
+	position 400 700
+		repeat 0 700
+
+	position 0 800
+		repeat 0 700
 
