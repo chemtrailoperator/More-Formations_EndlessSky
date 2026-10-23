@@ -203,6 +203,46 @@ formation "Wall"
 		repeat
 			start -2 23
 
+formation "Wall - Small"
+	rotatable 1
+	arc
+		start 400 0
+		angle 360
+		skip last
+		positions 36
+		repeat
+			start -2 23
+
+formation "Wall - Very Small"
+	rotatable 1
+	arc
+		start 200 0
+		angle 360
+		skip last
+		positions 36
+		repeat
+			start -2 23
+
+formation "Wall - Big"
+	rotatable 1
+	arc
+		start 1300 0
+		angle 360
+		skip last
+		positions 36
+		repeat
+			start -2 23
+
+formation "Wall - Very Big"
+	rotatable 1
+	arc
+		start 2000 0
+		angle 360
+		skip last
+		positions 36
+		repeat
+			start -2 23
+
 #Makes shape of electron shells around player. Takes up to 118 ships.
 formation "Radioactive"
 	flippable xy
