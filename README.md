@@ -1,5 +1,6 @@
 # More-Formations
-Endless Sky Plugin Repo: More Formations
+
+![Downloads](https://img.shields.io/github/downloads/chemtrailoperator/Endgame-Alpha_EndlessSky/total)
 
 This plugin simply expands the list of available formations. It includes both useful formations and pretty ones.
 
